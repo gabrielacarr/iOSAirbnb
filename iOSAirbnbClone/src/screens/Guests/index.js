@@ -4,6 +4,7 @@ import styles from './styles';
 
 const GuestScreen = () => {
   const [adults, setAdults] = useState(0);
+  const [children, setChildren] = useState(0);
 
   return (
     <View>
@@ -34,6 +35,39 @@ const GuestScreen = () => {
           {/* + */}
           <Pressable
             onPress={() => setAdults(adults + 1)}
+            style={styles.button}>
+            <Text style={{color: 'grey'}}>+</Text>
+          </Pressable>
+        </View>
+      </View>
+
+      {/* Row Two Children */}
+      <View style={styles.row}>
+        {/* Titles */}
+        <View>
+          <Text style={{fontWeight: 'bold'}}>Children</Text>
+          <Text style={{color: 'grey'}}>Ages 2 -12</Text>
+        </View>
+
+        {/* Buttons with given value  */}
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            fontSize: 15,
+          }}>
+          {/* - */}
+          <Pressable
+            onPress={() => setChildren(Math.max(0, children - 1))}
+            style={styles.button}>
+            <Text style={{color: 'grey'}}>-</Text>
+          </Pressable>
+
+          <Text style={{marginHorizontal: 20}}>{children}</Text>
+
+          {/* + */}
+          <Pressable
+            onPress={() => setChildren(children + 1)}
             style={styles.button}>
             <Text style={{color: 'grey'}}>+</Text>
           </Pressable>
