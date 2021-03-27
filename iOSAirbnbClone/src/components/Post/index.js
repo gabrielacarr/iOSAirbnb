@@ -20,7 +20,7 @@ const Post = () => {
 
       {/* Type description */}
       <Text style={styles.description}>
-        An entire spacious, light-filled, cozy tiny home all to yourselves with
+        An entire property, light-filled, cozy tiny home all to yourselves with
         separate parking on our beautiful 10 acre property, Dummy text for
         applications.
       </Text>
@@ -28,11 +28,11 @@ const Post = () => {
       {/* Old and New price */}
       <Text style={styles.prices}>
         <Text style={styles.oldPrice}>$152</Text>
-        <Text style={styles.newPrice}>$144</Text>
+        <Text style={styles.newPrice}> $144 / night</Text>
       </Text>
 
       {/* Total price */}
-      <Text style={styles.totalPrice}>$176</Text>
+      <Text style={styles.totalPrice}>$176 total</Text>
     </View>
   );
 };
