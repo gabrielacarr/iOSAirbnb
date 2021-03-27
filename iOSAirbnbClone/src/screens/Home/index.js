@@ -1,12 +1,20 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, ImageBackground} from 'react-native';
+import styles from './styles';
 
-const HomeScreen = () => {
+const HomeScreen = props => {
   return (
     <View>
-      <Text>Awesome, your HomeScreen component renders correctly!</Text>
+      {/* Search Bar Component */}
+
+      <ImageBackground
+        source={require('../../../assets/images/airbnd.jpg')}
+        style={styles.image}>
+        {/* Title */}
+
+        {/* Button */}
+      </ImageBackground>
     </View>
   );
 };
-
 export default HomeScreen;
