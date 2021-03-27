@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, ImageBackground} from 'react-native';
+import {View, Text, ImageBackground} from 'react-native';
 import styles from './styles';
 
 const HomeScreen = props => {
@@ -11,6 +11,7 @@ const HomeScreen = props => {
         source={require('../../../assets/images/airbnd.jpg')}
         style={styles.image}>
         {/* Title */}
+        <Text style={styles.title}>Go Near</Text>
 
         {/* Button */}
       </ImageBackground>
