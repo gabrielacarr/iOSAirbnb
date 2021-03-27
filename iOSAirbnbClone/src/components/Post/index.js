@@ -19,11 +19,9 @@ const Post = props => {
         {post.type}
       </Text>
 
-      {/* Type description */}
-      <Text style={styles.description}>
-        An entire property, light-filled, cozy tiny home all to yourselves with
-        separate parking on our beautiful 10 acre property, Dummy text for
-        applications.
+      {/* Type description: Title */}
+      <Text style={styles.type} numberOfLines={2}>
+        {post.title}
       </Text>
 
       {/* Old and New price */}
