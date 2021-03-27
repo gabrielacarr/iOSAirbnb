@@ -1,10 +1,15 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import styles from './styles';
 
 const GuestScreen = () => {
   return (
     <View>
-      <Text>Hello, I am your Post component on your screen</Text>
+      {/* Row One Adults */}
+      {/* Titles */}
+      {/* Buttons with given value  */}
+      {/* - */}
+      {/* + */}
     </View>
   );
 };
