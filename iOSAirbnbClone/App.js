@@ -5,7 +5,7 @@
  * @format
  * @flow strict-local
  */
-
+import Entype from 'react-native-vector-icons/Entypo';
 import React from 'react';
 import type {Node} from 'react';
 import {
@@ -70,10 +70,12 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
+          <Section title="Step One ">
+            <Entype name={'home'} size={24} />
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
+
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
