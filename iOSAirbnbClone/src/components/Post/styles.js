@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 26,
   },
+  type: {
+    fontSize: 15,
+    lineHeight: 26,
+    fontWeight: 'bold',
+  },
   prices: {
     fontSize: 18,
     marginVertical: 10,
