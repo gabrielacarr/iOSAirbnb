@@ -24,10 +24,9 @@ const Post = props => {
         {post.title}
       </Text>
 
-      {/* Old and New price */}
-      <Text style={styles.prices}>
-        <Text style={styles.oldPrice}>$152</Text>
-        <Text style={styles.newPrice}> $144 / night</Text>
+      {/* Type description */}
+      <Text style={styles.description} numberOfLines={10}>
+        {post.description}
       </Text>
 
       {/* Total price */}
