@@ -1,12 +1,22 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {useState} from 'react';
+import {View, TextInput} from 'react-native';
 import styles from './styles';
 
 const DestinationSearchScreen = () => {
+  const [inputText, setInputText] = useState('');
+
   return (
-    <Text>
-      Hello, I am your DestinationSearchScreen component on your screen
-    </Text>
+    <View style={styles.container}>
+      {/* Input components */}
+      <TextInput
+        style={styles.textInput}
+        placeholder="Where are you traveling?"
+        value={inputText}
+        onChange={setInputText}
+      />
+
+      {/* List of destinations */}
+    </View>
   );
 };
 
