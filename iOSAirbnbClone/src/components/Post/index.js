@@ -14,6 +14,11 @@ const Post = props => {
         {post.guest} guests · {post.bedroom} bedroom · {post.bath} bath
       </Text>
 
+      {/* Type: Property Type */}
+      <Text style={styles.type} numberOfLines={2}>
+        {post.type}
+      </Text>
+
       {/* Type description */}
       <Text style={styles.description}>
         An entire property, light-filled, cozy tiny home all to yourselves with
