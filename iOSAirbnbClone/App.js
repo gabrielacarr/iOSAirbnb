@@ -5,6 +5,8 @@
  * @format
  * @flow strict-local
  */
+
+import 'react-native-gesture-handler';
 import Entype from 'react-native-vector-icons/Entypo';
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
@@ -20,11 +22,11 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        {/* <HomeScreen /> */}
+        <HomeScreen />
         {/* <Post post={post2} /> */}
         {/* <SearchResultScreen /> */}
         {/* <DestinationSearchScreen /> */}
-        <GuestScreen />
+        {/* <GuestScreen /> */}
       </SafeAreaView>
     </>
   );
