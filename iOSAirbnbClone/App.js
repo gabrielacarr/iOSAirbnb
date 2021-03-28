@@ -16,17 +16,19 @@ import feed from './assets/data/feed';
 import SearchResultScreen from './src/screens/SearchResults';
 import DestinationSearchScreen from './src/screens/DestinationSearch';
 import GuestScreen from './src/screens/Guests';
+import Router from './src/navigation/Router';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <HomeScreen />
+        {/* <HomeScreen /> */}
         {/* <Post post={post2} /> */}
         {/* <SearchResultScreen /> */}
         {/* <DestinationSearchScreen /> */}
         {/* <GuestScreen /> */}
+        <Router />
       </SafeAreaView>
     </>
   );
